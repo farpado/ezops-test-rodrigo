@@ -1,0 +1,619 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData body-parser
+20 silly mapToRegistry name body-parser
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+24 silly fetchNamedPackageData express
+25 silly mapToRegistry name express
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/express
+29 silly fetchNamedPackageData http
+30 silly mapToRegistry name http
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/http
+34 silly fetchNamedPackageData mongoose
+35 silly mapToRegistry name mongoose
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+39 silly fetchNamedPackageData socket.io
+40 silly mapToRegistry name socket.io
+41 silly mapToRegistry using default registry
+42 silly mapToRegistry registry https://registry.npmjs.org/
+43 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+44 verbose request uri https://registry.npmjs.org/http
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 19:04:28
+47 verbose request id 0f889a50c850b566
+48 verbose etag W/"73e97389a43fe76f2560ee4f55ead524"
+49 verbose lastModified Fri, 24 Sep 2021 01:04:37 GMT
+50 http request GET https://registry.npmjs.org/http
+51 verbose request uri https://registry.npmjs.org/body-parser
+52 verbose request no auth needed
+53 info attempt registry request try #1 at 19:04:28
+54 verbose etag W/"842a0cdd353281851e1312f714a0124d"
+55 verbose lastModified Sat, 25 Sep 2021 14:28:10 GMT
+56 http request GET https://registry.npmjs.org/body-parser
+57 verbose request uri https://registry.npmjs.org/express
+58 verbose request no auth needed
+59 info attempt registry request try #1 at 19:04:28
+60 verbose etag W/"e20231d80aeb102acf98e6d224f5fedd"
+61 verbose lastModified Tue, 28 Sep 2021 09:07:16 GMT
+62 http request GET https://registry.npmjs.org/express
+63 verbose request uri https://registry.npmjs.org/socket.io
+64 verbose request no auth needed
+65 info attempt registry request try #1 at 19:04:28
+66 verbose etag W/"7d527ee01f95834009f3bfc2f3565afd"
+67 verbose lastModified Mon, 30 Aug 2021 07:22:27 GMT
+68 http request GET https://registry.npmjs.org/socket.io
+69 verbose request uri https://registry.npmjs.org/mongoose
+70 verbose request no auth needed
+71 info attempt registry request try #1 at 19:04:28
+72 verbose etag W/"97be8c45e49de760e7575d3ddf7b9a33"
+73 verbose lastModified Mon, 27 Sep 2021 14:41:54 GMT
+74 http request GET https://registry.npmjs.org/mongoose
+75 http 304 https://registry.npmjs.org/body-parser
+76 verbose headers { date: 'Fri, 01 Oct 2021 22:04:28 GMT',
+76 verbose headers   connection: 'keep-alive',
+76 verbose headers   'cf-ray': '6978fca66c59f623-GRU',
+76 verbose headers   age: '167',
+76 verbose headers   'cache-control': 'public, max-age=300',
+76 verbose headers   etag: '"842a0cdd353281851e1312f714a0124d"',
+76 verbose headers   'last-modified': 'Sat, 25 Sep 2021 14:28:10 GMT',
+76 verbose headers   vary: 'Accept-Encoding',
+76 verbose headers   'cf-cache-status': 'HIT',
+76 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+76 verbose headers   'x-amz-replication-status': 'COMPLETED',
+76 verbose headers   server: 'cloudflare' }
+77 silly get cb [ 304,
+77 silly get   { date: 'Fri, 01 Oct 2021 22:04:28 GMT',
+77 silly get     connection: 'keep-alive',
+77 silly get     'cf-ray': '6978fca66c59f623-GRU',
+77 silly get     age: '167',
+77 silly get     'cache-control': 'public, max-age=300',
+77 silly get     etag: '"842a0cdd353281851e1312f714a0124d"',
+77 silly get     'last-modified': 'Sat, 25 Sep 2021 14:28:10 GMT',
+77 silly get     vary: 'Accept-Encoding',
+77 silly get     'cf-cache-status': 'HIT',
+77 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+77 silly get     'x-amz-replication-status': 'COMPLETED',
+77 silly get     server: 'cloudflare' } ]
+78 verbose etag https://registry.npmjs.org/body-parser from cache
+79 verbose get saving body-parser to /home/diogo.barbosa/.npm/registry.npmjs.org/body-parser/.cache.json
+80 http 304 https://registry.npmjs.org/http
+81 verbose headers { date: 'Fri, 01 Oct 2021 22:04:28 GMT',
+81 verbose headers   connection: 'keep-alive',
+81 verbose headers   'cf-ray': '6978fca68ccd6b21-GRU',
+81 verbose headers   age: '300',
+81 verbose headers   'cache-control': 'public, max-age=300',
+81 verbose headers   etag: '"73e97389a43fe76f2560ee4f55ead524"',
+81 verbose headers   'last-modified': 'Fri, 24 Sep 2021 01:04:37 GMT',
+81 verbose headers   vary: 'Accept-Encoding',
+81 verbose headers   'cf-cache-status': 'HIT',
+81 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+81 verbose headers   'x-amz-replication-status': 'COMPLETED',
+81 verbose headers   server: 'cloudflare' }
+82 silly get cb [ 304,
+82 silly get   { date: 'Fri, 01 Oct 2021 22:04:28 GMT',
+82 silly get     connection: 'keep-alive',
+82 silly get     'cf-ray': '6978fca68ccd6b21-GRU',
+82 silly get     age: '300',
+82 silly get     'cache-control': 'public, max-age=300',
+82 silly get     etag: '"73e97389a43fe76f2560ee4f55ead524"',
+82 silly get     'last-modified': 'Fri, 24 Sep 2021 01:04:37 GMT',
+82 silly get     vary: 'Accept-Encoding',
+82 silly get     'cf-cache-status': 'HIT',
+82 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+82 silly get     'x-amz-replication-status': 'COMPLETED',
+82 silly get     server: 'cloudflare' } ]
+83 verbose etag https://registry.npmjs.org/http from cache
+84 verbose get saving http to /home/diogo.barbosa/.npm/registry.npmjs.org/http/.cache.json
+85 silly resolveWithNewModule body-parser@1.19.0 checking installable status
+86 silly cache add args [ 'body-parser@^1.19.0', null ]
+87 verbose cache add spec body-parser@^1.19.0
+88 silly cache add parsed spec Result {
+88 silly cache add   raw: 'body-parser@^1.19.0',
+88 silly cache add   scope: null,
+88 silly cache add   name: 'body-parser',
+88 silly cache add   rawSpec: '^1.19.0',
+88 silly cache add   spec: '>=1.19.0 <2.0.0',
+88 silly cache add   type: 'range' }
+89 silly addNamed body-parser@>=1.19.0 <2.0.0
+90 verbose addNamed ">=1.19.0 <2.0.0" is a valid semver range for body-parser
+91 silly addNameRange { name: 'body-parser', range: '>=1.19.0 <2.0.0', hasData: false }
+92 silly mapToRegistry name body-parser
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+96 verbose addNameRange registry:https://registry.npmjs.org/body-parser not in flight; fetching
+97 verbose get https://registry.npmjs.org/body-parser not expired, no request
+98 silly addNameRange number 2 { name: 'body-parser', range: '>=1.19.0 <2.0.0', hasData: true }
+99 silly addNameRange versions [ 'body-parser',
+99 silly addNameRange   [ '1.0.0',
+99 silly addNameRange     '1.0.1',
+99 silly addNameRange     '1.0.2',
+99 silly addNameRange     '1.1.0',
+99 silly addNameRange     '1.1.1',
+99 silly addNameRange     '1.1.2',
+99 silly addNameRange     '1.2.0',
+99 silly addNameRange     '1.2.1',
+99 silly addNameRange     '1.2.2',
+99 silly addNameRange     '1.3.0',
+99 silly addNameRange     '1.3.1',
+99 silly addNameRange     '1.4.0',
+99 silly addNameRange     '1.4.1',
+99 silly addNameRange     '1.4.2',
+99 silly addNameRange     '1.4.3',
+99 silly addNameRange     '1.5.0',
+99 silly addNameRange     '1.5.1',
+99 silly addNameRange     '1.5.2',
+99 silly addNameRange     '1.6.0',
+99 silly addNameRange     '1.6.1',
+99 silly addNameRange     '1.6.2',
+99 silly addNameRange     '1.6.3',
+99 silly addNameRange     '1.6.4',
+99 silly addNameRange     '1.6.5',
+99 silly addNameRange     '1.6.6',
+99 silly addNameRange     '1.6.7',
+99 silly addNameRange     '1.7.0',
+99 silly addNameRange     '1.8.0',
+99 silly addNameRange     '1.8.1',
+99 silly addNameRange     '1.8.2',
+99 silly addNameRange     '1.8.3',
+99 silly addNameRange     '1.8.4',
+99 silly addNameRange     '1.9.0',
+99 silly addNameRange     '1.9.1',
+99 silly addNameRange     '1.9.2',
+99 silly addNameRange     '1.9.3',
+99 silly addNameRange     '1.10.0',
+99 silly addNameRange     '1.10.1',
+99 silly addNameRange     '1.10.2',
+99 silly addNameRange     '1.11.0',
+99 silly addNameRange     '1.12.0',
+99 silly addNameRange     '1.12.1',
+99 silly addNameRange     '1.12.2',
+99 silly addNameRange     '1.12.3',
+99 silly addNameRange     '1.12.4',
+99 silly addNameRange     '1.13.0',
+99 silly addNameRange     '1.13.1',
+99 silly addNameRange     '1.13.2',
+99 silly addNameRange     '1.13.3',
+99 silly addNameRange     '1.14.0',
+99 silly addNameRange     '1.14.1',
+99 silly addNameRange     '1.14.2',
+99 silly addNameRange     '1.15.0',
+99 silly addNameRange     '1.15.1',
+99 silly addNameRange     '1.15.2',
+99 silly addNameRange     '1.16.0',
+99 silly addNameRange     '1.16.1',
+99 silly addNameRange     '1.17.0',
+99 silly addNameRange     '1.17.1',
+99 silly addNameRange     '1.17.2',
+99 silly addNameRange     '1.18.0',
+99 silly addNameRange     '1.18.1',
+99 silly addNameRange     '1.18.2',
+99 silly addNameRange     '1.18.3',
+99 silly addNameRange     '1.19.0' ] ]
+100 silly addNamed body-parser@1.19.0
+101 verbose addNamed "1.19.0" is a plain semver version for body-parser
+102 http 304 https://registry.npmjs.org/express
+103 verbose headers { date: 'Fri, 01 Oct 2021 22:04:28 GMT',
+103 verbose headers   connection: 'keep-alive',
+103 verbose headers   'cf-ray': '6978fca6ab774b4c-GRU',
+103 verbose headers   age: '227',
+103 verbose headers   'cache-control': 'public, max-age=300',
+103 verbose headers   etag: '"e20231d80aeb102acf98e6d224f5fedd"',
+103 verbose headers   'last-modified': 'Tue, 28 Sep 2021 09:07:16 GMT',
+103 verbose headers   vary: 'Accept-Encoding',
+103 verbose headers   'cf-cache-status': 'HIT',
+103 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+103 verbose headers   'x-amz-replication-status': 'PENDING',
+103 verbose headers   server: 'cloudflare' }
+104 silly get cb [ 304,
+104 silly get   { date: 'Fri, 01 Oct 2021 22:04:28 GMT',
+104 silly get     connection: 'keep-alive',
+104 silly get     'cf-ray': '6978fca6ab774b4c-GRU',
+104 silly get     age: '227',
+104 silly get     'cache-control': 'public, max-age=300',
+104 silly get     etag: '"e20231d80aeb102acf98e6d224f5fedd"',
+104 silly get     'last-modified': 'Tue, 28 Sep 2021 09:07:16 GMT',
+104 silly get     vary: 'Accept-Encoding',
+104 silly get     'cf-cache-status': 'HIT',
+104 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+104 silly get     'x-amz-replication-status': 'PENDING',
+104 silly get     server: 'cloudflare' } ]
+105 verbose etag https://registry.npmjs.org/express from cache
+106 verbose get saving express to /home/diogo.barbosa/.npm/registry.npmjs.org/express/.cache.json
+107 http 304 https://registry.npmjs.org/mongoose
+108 verbose headers { date: 'Fri, 01 Oct 2021 22:04:28 GMT',
+108 verbose headers   connection: 'keep-alive',
+108 verbose headers   'cf-ray': '6978fca6aa72f1ff-GRU',
+108 verbose headers   age: '192',
+108 verbose headers   'cache-control': 'public, max-age=300',
+108 verbose headers   etag: '"97be8c45e49de760e7575d3ddf7b9a33"',
+108 verbose headers   'last-modified': 'Mon, 27 Sep 2021 14:41:54 GMT',
+108 verbose headers   vary: 'Accept-Encoding',
+108 verbose headers   'cf-cache-status': 'HIT',
+108 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+108 verbose headers   'x-amz-replication-status': 'COMPLETED',
+108 verbose headers   server: 'cloudflare' }
+109 silly get cb [ 304,
+109 silly get   { date: 'Fri, 01 Oct 2021 22:04:28 GMT',
+109 silly get     connection: 'keep-alive',
+109 silly get     'cf-ray': '6978fca6aa72f1ff-GRU',
+109 silly get     age: '192',
+109 silly get     'cache-control': 'public, max-age=300',
+109 silly get     etag: '"97be8c45e49de760e7575d3ddf7b9a33"',
+109 silly get     'last-modified': 'Mon, 27 Sep 2021 14:41:54 GMT',
+109 silly get     vary: 'Accept-Encoding',
+109 silly get     'cf-cache-status': 'HIT',
+109 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+109 silly get     'x-amz-replication-status': 'COMPLETED',
+109 silly get     server: 'cloudflare' } ]
+110 verbose etag https://registry.npmjs.org/mongoose from cache
+111 verbose get saving mongoose to /home/diogo.barbosa/.npm/registry.npmjs.org/mongoose/.cache.json
+112 silly resolveWithNewModule http@0.0.1-security checking installable status
+113 silly cache add args [ 'http@^0.0.1-security', null ]
+114 verbose cache add spec http@^0.0.1-security
+115 silly cache add parsed spec Result {
+115 silly cache add   raw: 'http@^0.0.1-security',
+115 silly cache add   scope: null,
+115 silly cache add   name: 'http',
+115 silly cache add   rawSpec: '^0.0.1-security',
+115 silly cache add   spec: '>=0.0.1-security <0.0.2',
+115 silly cache add   type: 'range' }
+116 silly addNamed http@>=0.0.1-security <0.0.2
+117 verbose addNamed ">=0.0.1-security <0.0.2" is a valid semver range for http
+118 silly addNameRange { name: 'http',
+118 silly addNameRange   range: '>=0.0.1-security <0.0.2',
+118 silly addNameRange   hasData: false }
+119 silly mapToRegistry name http
+120 silly mapToRegistry using default registry
+121 silly mapToRegistry registry https://registry.npmjs.org/
+122 silly mapToRegistry uri https://registry.npmjs.org/http
+123 verbose addNameRange registry:https://registry.npmjs.org/http not in flight; fetching
+124 silly cache afterAdd body-parser@1.19.0
+125 verbose afterAdd /home/diogo.barbosa/.npm/body-parser/1.19.0/package/package.json not in flight; writing
+126 verbose get https://registry.npmjs.org/http not expired, no request
+127 silly addNameRange number 2 { name: 'http', range: '>=0.0.1-security <0.0.2', hasData: true }
+128 silly addNameRange versions [ 'http', [ '0.0.0', '0.0.1-security' ] ]
+129 silly addNamed http@0.0.1-security
+130 verbose addNamed "0.0.1-security" is a plain semver version for http
+131 silly resolveWithNewModule express@4.17.1 checking installable status
+132 silly cache add args [ 'express@^4.17.1', null ]
+133 verbose cache add spec express@^4.17.1
+134 silly cache add parsed spec Result {
+134 silly cache add   raw: 'express@^4.17.1',
+134 silly cache add   scope: null,
+134 silly cache add   name: 'express',
+134 silly cache add   rawSpec: '^4.17.1',
+134 silly cache add   spec: '>=4.17.1 <5.0.0',
+134 silly cache add   type: 'range' }
+135 silly addNamed express@>=4.17.1 <5.0.0
+136 verbose addNamed ">=4.17.1 <5.0.0" is a valid semver range for express
+137 silly addNameRange { name: 'express', range: '>=4.17.1 <5.0.0', hasData: false }
+138 silly mapToRegistry name express
+139 silly mapToRegistry using default registry
+140 silly mapToRegistry registry https://registry.npmjs.org/
+141 silly mapToRegistry uri https://registry.npmjs.org/express
+142 verbose addNameRange registry:https://registry.npmjs.org/express not in flight; fetching
+143 verbose afterAdd /home/diogo.barbosa/.npm/body-parser/1.19.0/package/package.json written
+144 silly resolveWithNewModule mongoose@6.0.8 checking installable status
+145 silly cache add args [ 'mongoose@^6.0.8', null ]
+146 verbose cache add spec mongoose@^6.0.8
+147 silly cache add parsed spec Result {
+147 silly cache add   raw: 'mongoose@^6.0.8',
+147 silly cache add   scope: null,
+147 silly cache add   name: 'mongoose',
+147 silly cache add   rawSpec: '^6.0.8',
+147 silly cache add   spec: '>=6.0.8 <7.0.0',
+147 silly cache add   type: 'range' }
+148 silly addNamed mongoose@>=6.0.8 <7.0.0
+149 verbose addNamed ">=6.0.8 <7.0.0" is a valid semver range for mongoose
+150 silly addNameRange { name: 'mongoose', range: '>=6.0.8 <7.0.0', hasData: false }
+151 silly mapToRegistry name mongoose
+152 silly mapToRegistry using default registry
+153 silly mapToRegistry registry https://registry.npmjs.org/
+154 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+155 verbose addNameRange registry:https://registry.npmjs.org/mongoose not in flight; fetching
+156 silly cache afterAdd http@0.0.1-security
+157 verbose afterAdd /home/diogo.barbosa/.npm/http/0.0.1-security/package/package.json not in flight; writing
+158 verbose get https://registry.npmjs.org/express not expired, no request
+159 silly addNameRange number 2 { name: 'express', range: '>=4.17.1 <5.0.0', hasData: true }
+160 silly addNameRange versions [ 'express',
+160 silly addNameRange   [ '0.14.0',
+160 silly addNameRange     '0.14.1',
+160 silly addNameRange     '1.0.0',
+160 silly addNameRange     '1.0.1',
+160 silly addNameRange     '1.0.2',
+160 silly addNameRange     '1.0.3',
+160 silly addNameRange     '1.0.4',
+160 silly addNameRange     '1.0.5',
+160 silly addNameRange     '1.0.6',
+160 silly addNameRange     '1.0.7',
+160 silly addNameRange     '1.0.8',
+160 silly addNameRange     '2.0.0',
+160 silly addNameRange     '2.1.0',
+160 silly addNameRange     '2.1.1',
+160 silly addNameRange     '2.2.0',
+160 silly addNameRange     '2.2.1',
+160 silly addNameRange     '2.2.2',
+160 silly addNameRange     '2.3.0',
+160 silly addNameRange     '2.3.1',
+160 silly addNameRange     '2.3.2',
+160 silly addNameRange     '2.3.3',
+160 silly addNameRange     '2.3.4',
+160 silly addNameRange     '2.3.5',
+160 silly addNameRange     '2.3.6',
+160 silly addNameRange     '2.3.7',
+160 silly addNameRange     '2.3.8',
+160 silly addNameRange     '2.3.9',
+160 silly addNameRange     '2.3.10',
+160 silly addNameRange     '2.3.11',
+160 silly addNameRange     '2.3.12',
+160 silly addNameRange     '2.4.0',
+160 silly addNameRange     '2.4.1',
+160 silly addNameRange     '2.4.2',
+160 silly addNameRange     '2.4.3',
+160 silly addNameRange     '2.4.4',
+160 silly addNameRange     '2.4.5',
+160 silly addNameRange     '2.4.6',
+160 silly addNameRange     '2.4.7',
+160 silly addNameRange     '2.5.0',
+160 silly addNameRange     '2.5.1',
+160 silly addNameRange     '2.5.2',
+160 silly addNameRange     '2.5.3',
+160 silly addNameRange     '2.5.4',
+160 silly addNameRange     '2.5.5',
+160 silly addNameRange     '2.5.6',
+160 silly addNameRange     '2.5.7',
+160 silly addNameRange     '2.5.8',
+160 silly addNameRange     '2.5.9',
+160 silly addNameRange     '2.5.10',
+160 silly addNameRange     '2.5.11',
+160 silly addNameRange     '3.0.0',
+160 silly addNameRange     '3.0.1',
+160 silly addNameRange     '3.0.2',
+160 silly addNameRange     '3.0.3',
+160 silly addNameRange     '3.0.4',
+160 silly addNameRange     '3.0.5',
+160 silly addNameRange     '3.0.6',
+160 silly addNameRange     '3.1.0',
+160 silly addNameRange     '3.1.1',
+160 silly addNameRange     '3.1.2',
+160 silly addNameRange     '3.2.0',
+160 silly addNameRange     '3.2.1',
+160 silly addNameRange     '3.2.2',
+160 silly addNameRange     '3.2.3',
+160 silly addNameRange     '3.2.4',
+160 silly addNameRange     '3.2.5',
+160 silly addNameRange     '3.2.6',
+160 silly addNameRange     '3.3.0',
+160 silly addNameRange     '3.3.1',
+160 silly addNameRange     '3.3.2',
+160 silly addNameRange     '3.3.3',
+160 silly addNameRange     '3.3.4',
+160 silly addNameRange     '3.3.5',
+160 silly addNameRange     '3.3.6',
+160 silly addNameRange     '1.0.0-beta',
+160 silly addNameRange     '1.0.0-beta2',
+160 silly addNameRange     '1.0.0-rc',
+160 silly addNameRange     '1.0.0-rc2',
+160 silly addNameRange     '1.0.0-rc3',
+160 silly addNameRange     '1.0.0-rc4',
+160 silly addNameRange     '2.0.0-beta',
+160 silly addNameRange     '2.0.0-beta2',
+160 silly addNameRange     '2.0.0-beta3',
+160 silly addNameRange     '2.0.0-rc',
+160 silly addNameRange     '2.0.0-rc2',
+160 silly addNameRange     '2.0.0-rc3',
+160 silly addNameRange     '3.0.0-alpha1',
+160 silly addNameRange     '3.0.0-alpha2',
+160 silly addNameRange     '3.0.0-alpha3',
+160 silly addNameRange     '3.0.0-alpha4',
+160 silly addNameRange     '3.0.0-alpha5',
+160 silly addNameRange     '3.0.0-beta1',
+160 silly addNameRange     '3.0.0-beta2',
+160 silly addNameRange     '3.0.0-beta3',
+160 silly addNameRange     '3.0.0-beta4',
+160 silly addNameRange     '3.0.0-beta6',
+160 silly addNameRange     '3.0.0-beta7',
+160 silly addNameRange     '3.0.0-rc1',
+160 silly addNameRange     '3.0.0-rc2',
+160 silly addNameRange     '3.0.0-rc3',
+160 silly addNameRange     ... 164 more items ] ]
+161 silly addNamed express@4.17.1
+162 verbose addNamed "4.17.1" is a plain semver version for express
+163 verbose afterAdd /home/diogo.barbosa/.npm/http/0.0.1-security/package/package.json written
+164 verbose get https://registry.npmjs.org/mongoose not expired, no request
+165 silly addNameRange number 2 { name: 'mongoose', range: '>=6.0.8 <7.0.0', hasData: true }
+166 silly addNameRange versions [ 'mongoose',
+166 silly addNameRange   [ '0.0.1',
+166 silly addNameRange     '0.0.2',
+166 silly addNameRange     '0.0.3',
+166 silly addNameRange     '0.0.4',
+166 silly addNameRange     '0.0.5',
+166 silly addNameRange     '1.0.0',
+166 silly addNameRange     '1.0.1',
+166 silly addNameRange     '1.0.2',
+166 silly addNameRange     '0.0.6',
+166 silly addNameRange     '1.0.3',
+166 silly addNameRange     '1.0.4',
+166 silly addNameRange     '1.0.5',
+166 silly addNameRange     '1.0.6',
+166 silly addNameRange     '1.0.7',
+166 silly addNameRange     '1.0.8',
+166 silly addNameRange     '1.0.10',
+166 silly addNameRange     '1.0.11',
+166 silly addNameRange     '1.0.12',
+166 silly addNameRange     '1.0.13',
+166 silly addNameRange     '1.0.14',
+166 silly addNameRange     '1.0.15',
+166 silly addNameRange     '1.0.16',
+166 silly addNameRange     '1.1.0',
+166 silly addNameRange     '1.1.1',
+166 silly addNameRange     '1.1.2',
+166 silly addNameRange     '1.1.3',
+166 silly addNameRange     '1.1.4',
+166 silly addNameRange     '1.1.5',
+166 silly addNameRange     '1.1.6',
+166 silly addNameRange     '1.1.7',
+166 silly addNameRange     '1.1.8',
+166 silly addNameRange     '1.1.9',
+166 silly addNameRange     '1.1.10',
+166 silly addNameRange     '1.1.11',
+166 silly addNameRange     '1.1.12',
+166 silly addNameRange     '1.1.13',
+166 silly addNameRange     '1.1.14',
+166 silly addNameRange     '1.1.15',
+166 silly addNameRange     '1.1.16',
+166 silly addNameRange     '1.1.17',
+166 silly addNameRange     '1.1.18',
+166 silly addNameRange     '1.1.19',
+166 silly addNameRange     '1.1.20',
+166 silly addNameRange     '1.1.21',
+166 silly addNameRange     '1.1.22',
+166 silly addNameRange     '1.1.23',
+166 silly addNameRange     '1.1.24',
+166 silly addNameRange     '1.1.25',
+166 silly addNameRange     '1.2.0',
+166 silly addNameRange     '1.3.0',
+166 silly addNameRange     '1.3.1',
+166 silly addNameRange     '1.3.2',
+166 silly addNameRange     '1.3.3',
+166 silly addNameRange     '1.3.4',
+166 silly addNameRange     '1.3.5',
+166 silly addNameRange     '1.3.6',
+166 silly addNameRange     '1.3.7',
+166 silly addNameRange     '1.4.0',
+166 silly addNameRange     '1.5.0',
+166 silly addNameRange     '1.6.0',
+166 silly addNameRange     '1.7.2',
+166 silly addNameRange     '1.7.3',
+166 silly addNameRange     '1.7.4',
+166 silly addNameRange     '1.8.0',
+166 silly addNameRange     '1.8.1',
+166 silly addNameRange     '1.8.2',
+166 silly addNameRange     '1.8.3',
+166 silly addNameRange     '1.8.4',
+166 silly addNameRange     '2.0.0',
+166 silly addNameRange     '2.0.1',
+166 silly addNameRange     '2.0.2',
+166 silly addNameRange     '2.0.3',
+166 silly addNameRange     '2.0.4',
+166 silly addNameRange     '2.1.0',
+166 silly addNameRange     '2.1.1',
+166 silly addNameRange     '2.1.2',
+166 silly addNameRange     '2.1.3',
+166 silly addNameRange     '2.1.4',
+166 silly addNameRange     '2.2.0',
+166 silly addNameRange     '2.2.1',
+166 silly addNameRange     '2.2.2',
+166 silly addNameRange     '2.2.3',
+166 silly addNameRange     '2.2.4',
+166 silly addNameRange     '2.3.0',
+166 silly addNameRange     '2.3.1',
+166 silly addNameRange     '2.3.2',
+166 silly addNameRange     '2.3.3',
+166 silly addNameRange     '2.3.4',
+166 silly addNameRange     '2.3.5',
+166 silly addNameRange     '2.3.6',
+166 silly addNameRange     '2.3.7',
+166 silly addNameRange     '2.3.8',
+166 silly addNameRange     '2.3.9',
+166 silly addNameRange     '2.3.10',
+166 silly addNameRange     '2.3.11',
+166 silly addNameRange     '2.3.12',
+166 silly addNameRange     '2.3.13',
+166 silly addNameRange     '2.4.0',
+166 silly addNameRange     '2.4.1',
+166 silly addNameRange     '2.4.2',
+166 silly addNameRange     ... 582 more items ] ]
+167 silly addNamed mongoose@6.0.8
+168 verbose addNamed "6.0.8" is a plain semver version for mongoose
+169 silly cache afterAdd express@4.17.1
+170 verbose afterAdd /home/diogo.barbosa/.npm/express/4.17.1/package/package.json not in flight; writing
+171 silly cache afterAdd mongoose@6.0.8
+172 verbose afterAdd /home/diogo.barbosa/.npm/mongoose/6.0.8/package/package.json not in flight; writing
+173 verbose afterAdd /home/diogo.barbosa/.npm/express/4.17.1/package/package.json written
+174 verbose afterAdd /home/diogo.barbosa/.npm/mongoose/6.0.8/package/package.json written
+175 http 304 https://registry.npmjs.org/socket.io
+176 verbose headers { date: 'Fri, 01 Oct 2021 22:04:29 GMT',
+176 verbose headers   connection: 'keep-alive',
+176 verbose headers   'cf-ray': '6978fcacf91ef728-GRU',
+176 verbose headers   age: '130',
+176 verbose headers   'cache-control': 'public, max-age=300',
+176 verbose headers   etag: '"7d527ee01f95834009f3bfc2f3565afd"',
+176 verbose headers   'last-modified': 'Mon, 30 Aug 2021 07:22:27 GMT',
+176 verbose headers   vary: 'Accept-Encoding',
+176 verbose headers   'cf-cache-status': 'HIT',
+176 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+176 verbose headers   'x-amz-replication-status': 'COMPLETED',
+176 verbose headers   server: 'cloudflare' }
+177 silly get cb [ 304,
+177 silly get   { date: 'Fri, 01 Oct 2021 22:04:29 GMT',
+177 silly get     connection: 'keep-alive',
+177 silly get     'cf-ray': '6978fcacf91ef728-GRU',
+177 silly get     age: '130',
+177 silly get     'cache-control': 'public, max-age=300',
+177 silly get     etag: '"7d527ee01f95834009f3bfc2f3565afd"',
+177 silly get     'last-modified': 'Mon, 30 Aug 2021 07:22:27 GMT',
+177 silly get     vary: 'Accept-Encoding',
+177 silly get     'cf-cache-status': 'HIT',
+177 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+177 silly get     'x-amz-replication-status': 'COMPLETED',
+177 silly get     server: 'cloudflare' } ]
+178 verbose etag https://registry.npmjs.org/socket.io from cache
+179 verbose get saving socket.io to /home/diogo.barbosa/.npm/registry.npmjs.org/socket.io/.cache.json
+180 verbose stack Error: Missing required argument #1
+180 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+180 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+180 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+180 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+180 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+180 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+180 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+180 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+180 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+180 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+181 verbose cwd /home/diogo.barbosa/Documentos/ezops/ezops-test-rodrigo
+182 error Linux 5.4.0-86-generic
+183 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+184 error node v8.10.0
+185 error npm  v3.5.2
+186 error code EMISSINGARG
+187 error typeerror Error: Missing required argument #1
+187 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+187 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+187 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+187 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+187 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+187 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+187 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+187 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+187 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+187 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+188 error typeerror This is an error with npm itself. Please report this error at:
+188 error typeerror     <http://github.com/npm/npm/issues>
+189 verbose exit [ 1, true ]

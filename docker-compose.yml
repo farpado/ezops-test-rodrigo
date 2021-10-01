@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+  ezops-app:
+    image: node:14
+    working_dir: /app
+    command: ['npm','run','server']
+    volumes: 
+      - ./:/app
+    ports:
+      - 3000:3000
+    environment:
+      DB_HOST: ezops-db
+      DB_PORT: 27017
+      DB_USERNAME: root
+      DB_PASSWORD: dev
+  
+  ezops-db:
+    image: mongo:5.0
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: dev
+      
