@@ -44,4 +44,4 @@ jobs:
         script: |
           sudo docker pull farpado/ezops-chat-app:latest
           sudo docker rm -f ezops-chat-app
-          sudo docker run -d --name=chat-app -p 3000:3000 --restart=always farpado/ezops-chat-app:latest
+          sudo docker run -d --name=ezops-chat-app -p 3000:3000 --restart=always farpado/ezops-chat-app:latest
