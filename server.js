@@ -62,7 +62,7 @@ io.on('connection', () =>{
 
 console.log('DB: ' + process.env['DB_STR_CONNECTION']);
 
-mongoose.connect(process.env['DB_STR_CONNECTION'], (err) => {
+mongoose.connect(process.env['DB_STR_CONNECTION'], { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
   console.log('mongodb connected',err);
 })
 
