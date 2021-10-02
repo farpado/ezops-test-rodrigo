@@ -66,6 +66,6 @@ mongoose.connect(process.env['DB_STR_CONNECTION'], { useNewUrlParser: true, useU
   console.log('mongodb connected',err);
 })
 
-var server = http.listen(3000, () => {
+var server = http.listen(process.env['APP_PORT'], () => {
   console.log('server is running on port', server.address().port);
 });
