@@ -25,6 +25,7 @@
     </div>
 </div>
 <script>
+  var domain = window.location.origin;
    var socket = io();
     $(() => {
         $("#send").click(()=>{
@@ -41,13 +42,13 @@
     }
 
     function getMessages(){
-      $.get('http://localhost:3000/messages', (data) => {
+      $.get(domain + '/messages', (data) => {
         data.forEach(addMessages);
       })
     }
 
     function sendMessage(message){
-      $.post('http://localhost:3000/messages', message)
+      $.post(domain + '/messages', message)
     }
 </script>
 </body>
