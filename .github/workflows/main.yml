@@ -33,7 +33,7 @@ jobs:
           push: true
           tags: farpado/ezops-chat-app:latest
           build-args: |
-            DB_PORT=3000
+            APP_PORT=3000
             DB_STR_CONNECTION=${{ secrets.DB_STR_CONNECTION }}
 
 
