@@ -11,7 +11,8 @@ services:
     ports:
       - 3000:3000
     environment:
-      DB_STR_CONNECTION: mongodb://root:dev@ezops-db:27017
+      APP_PORT: 3000
+      DB_STR_CONNECTION: "mongodb://root:dev@ezops-db:27017"
   
   ezops-db:
     image: mongo:5.0
