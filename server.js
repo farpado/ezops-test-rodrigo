@@ -60,10 +60,9 @@ io.on('connection', () =>{
   console.log('a user is connected')
 })
 
-const urlDB = `mongodb://${process.env['DB_USERNAME']}:${process.env['DB_PASSWORD']}@${process.env['DB_HOST']}:${process.env['DB_PORT']}`;
-console.log(urlDB);
+console.log('DB: ' + process.env['DB_STR_CONNECTION']);
 
-mongoose.connect(urlDB, (err) => {
+mongoose.connect(process.env['DB_STR_CONNECTION'], (err) => {
   console.log('mongodb connected',err);
 })
 

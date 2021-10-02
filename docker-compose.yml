@@ -11,10 +11,7 @@ services:
     ports:
       - 3000:3000
     environment:
-      DB_HOST: ezops-db
-      DB_PORT: 27017
-      DB_USERNAME: root
-      DB_PASSWORD: dev
+      DB_STR_CONNECTION: mongodb://root:dev@ezops-db:27017
   
   ezops-db:
     image: mongo:5.0
